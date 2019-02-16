@@ -19,7 +19,7 @@ public class GetThread implements Runnable {
     @Override
     public void run() {
         try {
-            while ( ! Thread.interrupted()) {
+            while (!Thread.interrupted()) {
                 URL url = new URL(Utils.getURL() + "/get?from=" + n);
                 HttpURLConnection http = (HttpURLConnection) url.openConnection();
 
