@@ -19,6 +19,7 @@ public class Message {
 		this.text = text;
 	}
 
+
 	public String toJSON() {
 		Gson gson = new GsonBuilder().create();
 		return gson.toJson(this);
